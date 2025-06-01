@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Shero Internship Project - Responsive Static Website" />
+  <title>Shero Internship</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header container">
+    <div class="logo">Shero</div>
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Build Beautiful Web Experiences</h1>
+      <p>We design and develop modern, responsive, and accessible websites.</p>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section class="feature-section container">
+    <div class="feature-content">
+      <h2>Discover the Future of Design</h2>
+      <p>Explore innovative tools and resources to transform your creative workflow and bring ideas to life.</p>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+    <div class="feature-image">
+      <img src="https://picsum.photos/550/350?random=10" alt="Creative Design" />
+    </div>
+  </section>
+
+  <!-- Image Grid Section -->
+  <section class="image-grid container">
+    <div class="grid-container">
+      <img src="https://picsum.photos/400/300?random=1" alt="Random Image 1" />
+      <img src="https://picsum.photos/400/300?random=2" alt="Random Image 2" />
+      <img src="https://picsum.photos/400/300?random=3" alt="Random Image 3" />
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section">
+    <div class="container">
+      <h2>Explore our visual gallery</h2>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="https://picsum.photos/400/300?random=4" alt="Review 1" />
+            </li>
+            <li class="glide__slide">
+              <img src="https://picsum.photos/400/300?random=5" alt="Review 2" />
+            </li>
+            <li class="glide__slide">
+              <img src="https://picsum.photos/400/300?random=6" alt="Review 3" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2025 Shero. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    new Glide('.glide', {
+      type: 'carousel',
+      perView: 3,
+      breakpoints: {
+        1024: { perView: 2 },
+        768: { perView: 1 }
+      }
+    }).mount();
+  </script>
+
+</body>
+</html>
